@@ -1,7 +1,7 @@
 <template>
 	<div class="w3-top" :class="{'w3-teal':!home}">
 		<div class="w3-bar" :class="{'w3-teal':menu}">
-			<router-link to="/" class="w3-bar-item w3-button title" v-show="!voltar">FILA aÊ</router-link>
+			<router-link to="/" class="w3-bar-item w3-button title" v-show="!voltar"></router-link>
 			<a class="w3-bar-item w3-button" v-show="voltar" @click="voltarHistory">
         <i class="fa fa-chevron-left"></i>
       </a>
