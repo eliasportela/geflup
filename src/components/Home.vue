@@ -1,6 +1,6 @@
 <template>
 	<div class="w3-text-white">
-    <top-bar voltar="">
+    <top-bar>
     </top-bar>
     <div>
       <GmapMap
@@ -39,7 +39,7 @@
               <span class="w3-xlarge bold">{{upas[indiceUpa].qtd}}</span><br>
               <span class="w3-small">PESSOAS NA FILA</span>
             </div>
-            <div class="w3-padding w3-border-left w3-border-right bold blue">DETALHES</div>
+            <div class="w3-padding w3-border-left w3-border-right bold blue" @click="detalhesUpa(indiceUpa)">DETALHES</div>
           </div>
           <div class="w3-padding w3-cell-row w3-border-bottom">
             <div class="w3-cell w3-cell-middle" style="width: 15%">
@@ -139,16 +139,10 @@ export default {
     showDetalhes(id){
       this.show = true;
       this.indiceUpa = id;
+    },
+    detalhesUpa(id){
+      this.$router.push('/upa/' + id)
     }
   }
 }
 </script>
-<style>
-  .show {
-    display: block;
-  }
-  .blue {
-    color: #2b5797;
-  }
-</style>
-

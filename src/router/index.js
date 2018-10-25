@@ -5,11 +5,8 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import Login from '@/components/Login'
 import About from '@/components/About'
-import Voluntarios from '@/components/Voluntarios'
-import Estados from '@/components/Estados'
-import Listas from '@/components/Listas'
-import ListaConteudo from '@/components/ListaConteudo'
-import ListaConteudoDetalhes from '@/components/ListaConteudoDetalhes'
+import Upa from '@/components/Upa'
+import Fluxo from '@/components/Fluxo'
 
 Vue.use(Router)
 
@@ -27,34 +24,19 @@ export default new Router({
       component: Login
     },
     {
-      path: '/estados',
-      name: 'Estados',
-      component: Estados
+      path: '/upa/:id',
+      name: 'Upa',
+      component: Upa
+    },
+    {
+      path: '/fluxo',
+      name: 'Fluxo',
+      component: Fluxo
     },
     {
       path: '/sobre-nos',
       name: 'About',
       component: About
-    },
-    {
-      path: '/voluntarios',
-      name: 'Voluntarios',
-      component: Voluntarios
-    },
-    {
-      path: '/:estado/listas',
-      name: 'Listas',
-      component: Listas
-    },
-    {
-      path: '/:reflista/:dslista',
-      name: 'ListaConteudo',
-      component: ListaConteudo
-    },
-    {
-      path: '/lista/:reflista/:dslista',
-      name: 'ListaConteudoDetalhes',
-      component: ListaConteudoDetalhes
     }
   ]
 })
