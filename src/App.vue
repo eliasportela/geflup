@@ -19,9 +19,6 @@ export default {
   a {
     text-decoration: none;
   }
-  .w3-button:hover {
-    background-color: inherit!important;
-  }
   .bold{
     font-weight: bold;
   }

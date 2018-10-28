@@ -23,7 +23,7 @@
       <router-link :to="'/fluxo'" class="w3-bar-item w3-border-bottom w3-small w3-padding-16" @click.native="abrirMenu">
 		  	<i class="fa fa-angle-right w3-right blue"></i> FLUXO ATENDIMENTO
       </router-link>
-      <router-link :to="'/ajuda'" class="w3-bar-item w3-border-bottom w3-small w3-padding-16" @click.native="abrirMenu">
+      <router-link :to="'/ajuda'" class="w3-bar-item w3-border-bottom w3-small w3-padding-16" @click.native="abrirMenu" v-show="false">
         <i class="fa fa-angle-right w3-right blue"></i> AJUDA
       </router-link>
       <router-link :to="'/sobre-nos'" class="w3-bar-item w3-border-bottom w3-small w3-padding-16" @click.native="abrirMenu">
