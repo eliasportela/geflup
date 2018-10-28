@@ -5,8 +5,11 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import Login from '@/components/Login'
 import About from '@/components/About'
+import Upas from '@/components/Upas'
 import Upa from '@/components/Upa'
 import Fluxo from '@/components/Fluxo'
+import Ajuda from '@/components/Ajuda'
+import Administrativo from '@/components/Administrativo'
 
 Vue.use(Router)
 
@@ -15,13 +18,18 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'Login',
+      component: Login
+    },
+    {
+      path: '/home',
       name: 'Home',
       component: Home
     },
     {
-      path: '/login',
-      name: 'Login',
-      component: Login
+      path: '/upas',
+      name: 'Upas',
+      component: Upas
     },
     {
       path: '/upa/:id',
@@ -37,6 +45,16 @@ export default new Router({
       path: '/sobre-nos',
       name: 'About',
       component: About
+    },
+    {
+      path: '/ajuda',
+      name: 'Ajuda',
+      component: Ajuda
+    },
+    {
+      path: '/administrativo',
+      name: 'Administrativo',
+      component: Administrativo
     }
   ]
 })
